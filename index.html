@@ -7,104 +7,63 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <!-- Comments in HTML -->
-    <!-- Comment Shortcut CMD + / or CTRL + / -->
-    <h1 style="text-align: center">Review of HTML ALL at once</h1>
+   <h2>Intro to CSS</h2>
 
-    <!-- Block Elements -->
-    <h2>Block elements</h2>
-    <p>Are elements/tags that take up the entire width of the screen</p>
-    <div>some ofthose elements are:</div>
-    <ul>
-        <li>h1-h6 tags</li>
-        <li>lists ul, li, ol</li>
-        <li>divs</li>
-        <li>p tags</li>
-    </ul>
-    <!-- h1 - h6 -->
-    <h2>Heading tags</h2>
-    <h1>h1</h1>
-    <h2>h2</h2>
-    <h3>h3</h3>
-    <h4>h4</h4>
-    <h5>h5</h5>
-    <h6>h6</h6>
+   <h3>Basics</h3>
 
-    <h2>Inline Elements</h2>
-    <p>Elements that only take up the space to show the content itself</p>
+   <h4>Inline Styles</h4>
+   <i>You have in-line styles by adding a style attribute to each tag. Then choosing a property to apply a stlye to</i>
+   <br>
+   <br>
+   <br>
+   <p>ex: I want the following text to be red <span style="color: red;">See I am red with in-line styles<span/></p>
 
-    <p>those elements are:</p>
-    <ol>
-        <li>hyperlinks a tags</li>
-        <li>image tags img</li>
-        <li>input tags(form fields)</li>
-        <li>spans</li>
-    </ol>
+   <h4>External style sheets</h4>
 
-    <h2>Block Elements vs Inline Elements</h2>
+   <i>Use a link tag in the head to connect the stylesheet to the HTML</i>
 
-    <p>ex: we can put two image tags next to each other horizontally</p>
-    <p>But we can't put two divs next to each other horizontally</p>
-
-    <img src="data:image/jpeg;base64,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" alt="">
-    <img src="data:image/jpeg;base64,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" alt="">
-
-    <div style="background: red">1 div</div>
-    <div style="background: blue">2 divs</div>
-
-    <p>Contrast example of spans, which are what type of elements?</p>
-
-    <span style="background: red">span 1</span>
-    <span style="background: blue">span 2</span>
+   <p>ex: change the text following this to be blue: <label>see I am blue</label></p>
+   
 
 
-    <h2>Script Tags</h2>
-    <p>These tags connect our html to our javascript</p>
+   <h3>Core CSS Concepts</h3>
+   <span>
+       <span>selectors</span>
+       <h4>id selectors</h4>
+       <p>ex: Instead of using a label element tag I am going to use an id <span id="changeTextToBlue">see I am blue</span></p>
 
-    <script src="./index.js"></script>
+       <h4>class selectors</h4>
+       <p class="changeMe">I</p>
+       <p class="changeMe">want</p>
+       <p class="changeMe">all</p>
 
-    <h2>A tags</h2>
+       <h4>Combining selectors</h4>
 
-    <a href="./secondPage.html">Second Page</a>
+        <h5>element + element</h5>
+       <div>
+           This div contains a span that I want to edit
+           <span>I am the span</span>
+       </div>
 
-    <h2>Horizonal rule</h2>
-    <p>see below</p>
-    <hr>
+       <h5>element + id</h5>
+       <div>
+           this div has another div with a specific
+           id I want to edit
+           <div id="editMe">i am div with id</div>
+       </div>
 
-    <h2>Break Line tag</h2>
-    <p>Here is <br> my text broken <br> up </p>
-
-
-    <h2>Input fields</h2>
-
-    <label for="name">Name</label>
-    <input type="text">
-    <button>Submit</button>
-
-    <p>What type of element is an label and a button? Inline or block?</p>
-    <p>How can you tell?</p>
-
-    <h2>Tables</h2>
-    
-    <table>
-        <thead>
-            <th>
-                <tr>
-                    <td>Name</td>
-                    <td>Age</td>
-                </tr>
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Brett</td>
-                <td>34</td>
-            </tr>
-        </tbody>
-    </table>
-
-
-    <script src="./index.js"></script>
+       <h5>class + id</h5>
+       <div class="someClass">
+           I am someClass
+           <div id="someID" class="someOtherClass">I am someID within someClass</div>
+       </div>
+       <div class="someClass">
+        I am someClass
+       </div>
+       <div class="someClass">
+            I am someClass 
+       </div>
+   </span>
 
 
 </body>

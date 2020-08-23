@@ -1,0 +1,91 @@
+/* How this works:
+
+selector {
+    property: value;
+}
+
+selectors can be
+- elements
+- id 
+- class
+- a combination of the above
+
+what is an id?
+an attribute that you add to an element
+you should assign a unique name to the value of an id
+
+what is a class?
+an attribute on an element or a group of elements that
+you want to style exactly the same.
+
+Specificity
+*/
+
+label {
+    color: blue;
+}
+
+/* For id use the # symbol
+ here is the syntax for ids
+
+#NameOfId {
+    property: value;
+} 
+
+*/
+
+#changeTextToBlue {
+    color: blue;
+}
+
+body {
+    padding: 20px;
+    margin-bottom: 5000px;
+}
+
+.changeMe {
+    color: green
+}
+
+/* combining selectors syntax 
+
+parentSelector childSelector {
+  property: value;
+}
+
+someClass is the parent because
+it contains someID
+
+*/
+
+.someClass #someID {
+    background-color: pink;
+}
+
+/* CSS Rules: 
+  1. the last style will overrite the previous
+  2. The more specific you are the precendence your style has to be applied
+  3. classes are worth 1 pt
+  4. ids are worth 100 pts
+
+*/
+
+.someClass #someID.someOtherClass {
+    background-color: aqua;
+}
+
+.someClass #someID {
+    background-color: yellow;
+}
+
+/* Since the above style is
+specific. That styling is
+applied instead of the one
+immediately below
+
+*/
+
+#someID {
+    background-color: green;
+}
+
