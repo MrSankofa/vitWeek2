@@ -1,0 +1,91 @@
+#centerMe {
+    display: flex;
+    justify-content: center;
+}
+
+/* You have to know the exact
+width of the content to do this
+correctly
+  */
+#centerMeUsingMargin {
+    margin: 0 auto;
+    width: 151px;
+}
+
+.size {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.block.size {
+    background-color: green;
+    border: 1px solid;
+}
+
+#white {
+    background-color: azure;
+    position: relative;
+    border: 3px dashed;
+}
+
+#white div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid
+}
+
+/* #searchIcon img {
+    width: 15px;
+    top: 2px;
+    left: 2px;
+}
+
+#searchIcon img, #searchIcon input {
+    position: absolute;
+}
+
+#searchIcon {
+    position: relative;
+} */
+
+.search {
+    position: relative;
+}
+.search .magGlass { 
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+}
+
+#window {
+    width: 100px;
+    overflow: hidden;
+}
+
+#imageSlider {
+    display: flex;
+}
+
+#imageSlider img {
+    width: 100px;
+    transform: translateX(0px);
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200px);
+    }
+}
+
+
+
+
+
+
